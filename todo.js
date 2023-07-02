@@ -1,12 +1,5 @@
 
-const myArray = JSON.parse(localStorage.getItem('myArray')) || [{
-    name:'todo example 1',
-    dueDate: '2023-07-01'
-},
-{
-    name: 'todo example 2',
-    dueDate: '2023-07-02'
-}]; // store the input item list in the array
+const myArray = JSON.parse(localStorage.getItem('myArray')) || []; // store the input item list in the array
 
 renderTodoList();
 
