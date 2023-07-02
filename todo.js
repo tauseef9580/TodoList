@@ -30,6 +30,9 @@ function renderTodoList(){
             class="delete-todo-button" onclick="
             myArray.splice(${i},1);
             renderTodoList();
+
+            // save the updates
+            saveToStrorage();
             
             ">
                 Delete
@@ -51,6 +54,9 @@ function additems(){
 
     item.value = ''; // making null so input can impty before entering new item int list
     renderTodoList();
+
+    // save to updates
+    saveToStorage();
 }
 
 function saveToStorage(){
