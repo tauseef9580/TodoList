@@ -1,7 +1,12 @@
 
-const myArray = [{
-        name: 'Todo example 1',
-        duedate: '01-07-2002'}]; // store the input item list in the array
+const myArray = JSON.parse(localStorage.getItem('myArray')) || [{
+    name:'todo example 1',
+    dueDate: '01-07-2023'
+},
+{
+    name: 'todo example 2',
+    dueDate: '02-07-2023'
+}]; // store the input item list in the array
 
 renderTodoList();
 
@@ -46,6 +51,10 @@ function additems(){
 
     item.value = ''; // making null so input can impty before entering new item int list
     renderTodoList();
+}
+
+function saveToStorage(){
+    localStorage.setItem('myArray',JSON.stringify(myArray));
 }
 
 
