@@ -1,5 +1,7 @@
 
-const myArray = []; // store the input item list in the array
+const myArray = [{
+        name: 'Todo example 1',
+        duedate: '01-07-2002'}]; // store the input item list in the array
 
 renderTodoList();
 
