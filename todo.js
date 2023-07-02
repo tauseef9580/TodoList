@@ -1,12 +1,5 @@
 
-const myArray = [{
-    name:'tauseef',
-    dueDate: '01--7-2002'
-},
-{
-    name: 'Go to gym',
-    dueDate: '01-01-2002'
-}]; // store the input item list in the array
+const myArray = []; // store the input item list in the array
 
 renderTodoList();
 
